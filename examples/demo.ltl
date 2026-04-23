@@ -1,0 +1,10 @@
+// examples/demo.ltl — runnable demo for ltl_brainfuck
+
+import std::io
+use ltl_brainfuck as lib
+
+fn main() {
+    io::println("ltl_brainfuck demo starting...")
+    let result = lib::main() |> io::inspect()
+    io::println("demo complete")
+}
